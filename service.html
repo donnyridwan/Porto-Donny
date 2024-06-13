@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovise | Services</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <!-- CSS -->
+    <!-- Locomotive -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Custom -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- Intro -->
+    <section class="intro">
+        <div class="intro_wrapper">
+            <h1 class="inFix">Innovise</h1>
+            <h1 class="inFill">Innovise</h1>
+        </div>
+    </section>
+
+    <!-- fixed canvas cursor -->
+    <div class="canvas-wrapper">
+        <canvas id="fluid"></canvas>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+
+    <!-- Navbar -->
+    <nav>
+        <div id="container">
+            <a href="index.html">
+                <h2>innovise</h2>
+            </a>
+
+            <div class="hamburger">
+                <p>menu</p>
+                <div class="toggle focus" data-magnetic>
+                    <span class="top"></span>
+                    <span class="bottom"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Fullscreen Nav-->
+    <div class="menu">
+        <div id="container">
+            <div class="left">
+                <a href="about.html" data-text='about'>about</a>
+                <a href="works.html" data-text='work'>work</a>
+                <a href="service.html" data-text='services'>services</a>
+                <a href="team.html" data-text='team'>team</a>
+                <a href="contact.html" data-text='contact'>contact</a>
+            </div>
+            <div class="right">
+                <a href="mailto:info@innovise.com" class="focus">info@innovise.com</a>
+                <a href="tel:+011234567890" class="focus">+01 1234567890</a>
+                <div class="social_cnt">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img class="focus" src="assets/instagram.svg" alt="instagram" loading="lazy" data-magnetic>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img class="focus" src="assets/facebook.svg" alt="facebook" loading="lazy" data-magnetic>
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank">
+                        <img class="focus" src="assets/linkedin.svg" alt="linkedin" loading="lazy" data-magnetic>
+                    </a>
+                    <a href="https://dribbble.com" target="_blank">
+                        <img class="focus" src="assets/dribble.svg" alt="dribble" loading="lazy" data-magnetic>
+                    </a>
+                    <a href="https://www.behance.net" target="_blank">
+                        <img class="focus" src="assets/behance.svg" alt="behance" loading="lazy" data-magnetic>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu_overlay"></div>
+
+    <!-- Scrollable Content -->
+    <div id="main">
+        <!-- Hero -->
+        <header class="hero">
+            <div id="container">
+                <h2 class="focus2">Elevate Your Online Presence with Our Expertise</h2>
+                <p class="smallT">
+                    we understand that the digital face of your business is not just a website—it's your first
+                    impression, your storefront, and often your primary customer interaction point.
+                </p>
+            </div>
+        </header>
+
+        <!-- full img -->
+        <div id="full_img">
+            <div class="parallax_img">
+                <img src="assets/team/office6.jpg" alt="service" loading="lazy" data-scroll
+                    data-scroll-speed="-1"></img>
+
+                <h1 class="focus2">
+                    infinite <br> imagina <br>tive
+                </h1>
+            </div>
+        </div>
+
+        <!-- Services -->
+        <section class="services">
+            <div id="container">
+                <div class="sticky_scroll">
+                    <div class="heading">
+                        <h1 class="fade">We are <br> good at</h1>
+                        <h1 class="fill">We are <br> good at</h1>
+                    </div>
+                    <h5>
+                        Elevating digital experiences with expertly crafted web development, intuitive UI/UX design, and
+                        distinctive branding solutions.
+                    </h5>
+                </div>
+                <div class="sticky_scrolling">
+                    <div class="card">
+                        <h3>design</h3>
+                        <p>
+                            Elevate your vision with our bespoke design services, where creativity meets functionality
+                            to
+                            bring your ideas to life. Let's craft the extraordinary together.
+                        </p>
+                        <div class="cat mT2">
+                            <h5> Web Design </h5>
+                            <h5>App Design</h5>
+                            <h5>Visual Design</h5>
+                            <h5>Prototypes</h5>
+                            <h5>Interactions</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>develop <br>ment</h3>
+                        <p>
+                            Transform your digital dreams into reality with our cutting-edge development services, where
+                            innovation and precision converge to build seamless, robust solutions. Let's build the
+                            future, one code line at a time.
+                        </p>
+                        <div class="cat mT2">
+                            <h5> HTML & SCSS </h5>
+                            <h5>Tailwind</h5>
+                            <h5>React JS</h5>
+                            <h5>Next JS</h5>
+                            <h5>Express JS</h5>
+                            <h5>Node JS</h5>
+                            <h5>Framer</h5>
+                            <h5>Webflow</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>brand<br>ing</h3>
+                        <p>
+                            Craft your identity with our comprehensive branding services, where your vision is infused
+                            with our creative expertise to forge memorable, impactful brands. Let's make your mark in
+                            the world, unmistakably yours.
+                        </p>
+                        <div class="cat mT2">
+                            <h5> Strategy </h5>
+                            <h5> Typography </h5>
+                            <h5> Identity </h5>
+                            <h5> Style guide </h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>SEO</h3>
+                        <p>
+                            Elevate your brand identity with our expert branding services, merging your unique vision
+                            with our creative prowess to create distinctive, unforgettable brands that stand out in the
+                            market. Let's ensure your brand makes a lasting impression.
+                        </p>
+                        <div class="cat mT2">
+                            <h5> Audit </h5>
+                            <h5> Keyword Research </h5>
+                            <h5> On-Page SEO </h5>
+                            <h5> Technical SEO </h5>
+                            <h5> Optimization </h5>
+                            <h5> Link Building </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process -->
+        <section class="services">
+            <div id="container">
+                <div class="sticky_scroll">
+                    <div class="heading">
+                        <h1 class="fade">Our <br> process</h1>
+                        <h1 class="fill">Our <br> process</h1>
+                    </div>
+                    <h5>
+                        Our seasoned team combines cutting-edge UI/UX design, branding expertise, and SEO strategies to
+                        craft bespoke digital experiences.
+                    </h5>
+                </div>
+                <div class="sticky_scrolling">
+                    <div class="card">
+                        <h5>1. Discovery</h5>
+                        <h3 class="mT2">research</h3>
+                        <p>
+                            During this discovery phase, our team starts a thorough research and analysis to understand
+                            your project in detail.
+
+                            We employ numerous research methods to uncover valuable insights about your competitors and
+                            target audience.This process allows us to gather data that informs our design and
+                            development decisions, ensuring our methods and solutions are aligned with your business
+                            objectives.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h5>2. UI/UX Design</h5>
+                        <h3 class="mT2">Concept</h3>
+                        <p>
+                            Having understood your requirements we embark on a creative journey to develop design ideas.
+                            We utilize collaborative brainstorming and prototyping, which in return breathes life into
+                            the concepts and we further refine them with valuable user feedback.
+                            This iterative process ensures that our final designs are user-centered and all options have
+                            been explored to deliver cutting-edge solutions that engage and convert.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h5>3. Technology</h5>
+                        <h3 class="mT2">Develop<br>ment</h3>
+                        <p>
+                            Our talented developers focus on translating the designs into working versions on our
+                            staging servers. By collaborating closely, our designers and developers facilitate a smooth
+                            handover for integration of the designs into the development process. Our goal is to craft
+                            designs that not only look visually great but are also practical and ready for integration,
+                            ensuring a smooth transition from design to development.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h5>4. Testing</h5>
+                        <h3 class="mT2">platform</h3>
+                        <p>
+                            With a meticulous approach, we ensure that the website works and looks great across all
+                            platforms, by physically testing on all screen resolutions, cross-browser, including mobile
+                            and tablet devices. This is a very intricate process where we meticulously fine-tune the
+                            final product. Our goal is to create websites that are functional and user friendly to
+                            increase customer conversion and retention.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h5>5. Deployment</h5>
+                        <h3 class="mT2">launch</h3>
+                        <p>
+                            When you have fully tested and approved the final version of the website on our staging
+                            server, we begin the migration process of deploying the website onto your live server. We
+                            run our final check list to make sure everything runs smoothly before we finally push the
+                            “go live” button. We will provide you with content management training, so you have complete
+                            peace of mind, knowing that you can use the website to its full potential. We also provide
+                            aftercare website support if required.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div id="container">
+                <div class="heading_cnt">
+                    <div class="heading">
+                        <h1 class="fade">have an <br> idea?</h1>
+                        <h1 class="fill">have an <br> idea?</h1>
+                    </div>
+                    <a href="contact.html" class="btn focus" data-magnetic>
+                        <span>Contact Us</span>
+                    </a>
+                </div>
+
+                <div class="wrapper focus mT5">
+                    <a href="https://www.instagram.com" target="_blank" class="socialLink">
+                        <h5>Instagram</h5>
+                        <img src="assets/instagram.svg" alt="Instagram" loading="lazy">
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" class="socialLink">
+                        <h5>Facebook</h5>
+                        <img src="assets/facebook.svg" alt="Facebook" loading="lazy">
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" class="socialLink">
+                        <h5>Linkedin</h5>
+                        <img src="assets/linkedin.svg" alt="Linkedin" loading="lazy">
+                    </a>
+                    <a href="https://www.behance.net" target="_blank" class="socialLink">
+                        <h5>Behance</h5>
+                        <img src="assets/behance.svg" alt="Behance" loading="lazy">
+                    </a>
+                    <a href="https://www.dribble.com" target="_blank" class="socialLink">
+                        <h5>Dribble</h5>
+                        <img src="assets/dribble.svg" alt="dribbble" loading="lazy">
+                    </a>
+                </div>
+
+                <div class="copyrights mT2">
+                    <p>©2024 Innovise</p>
+                    <p>All Images are used from Behannce, Dribble by thier own creators.</p>
+                </div>
+            </div>
+            <div class="full mT5 focus">
+                <h1>Innovise</h1>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- Locomotive -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom -->
+    <script src="js/main.js" type="module" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+// This scss used in home and work page too
+.work {
+    padding-bottom: 12rem;
+
+    #container {
+        .wrapper {
+            display: flex;
+            gap: 5rem;
+            width: 100%;
+            max-width: 1100px;
+            margin-left: 5rem;
+
+            .col {
+                display: flex;
+                flex-direction: column;
+                gap: 10rem;
+                width: 100%;
+
+                .card {
+                    .parallax_img {
+                        height: 80vh;
+                        max-height: 600px;
+                        border-radius: 25px;
+
+                        img {
+                            width: 110%;
+                        }
+                    }
+                }
+
+                &:nth-child(2) {
+                    margin-top: 20rem;
+                }
+            }
+        }
+    }
+}
+
+//====================================== Breakpoint
+@media (max-width: 1440px) {
+    .work {
+        #container {
+            .wrapper {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 1040px) {
+    .work {
+        #container {
+            .wrapper {
+                gap: 2rem;
+
+                .col {
+                    .card {
+                        .parallax_img {
+                            max-height: 500px;
+
+                            img {
+                                width: 120%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 780px) {
+    .work {
+
+        #container {
+            .wrapper {
+                flex-direction: column;
+                gap: 5rem;
+
+                .col {
+                    gap: 5rem;
+
+                    &:nth-child(2) {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 520px) {
+    .work {
+        padding-bottom: 8rem;
+    }
+}

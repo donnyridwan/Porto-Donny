@@ -1,0 +1,99 @@
+.about_experiences {
+    padding-top: 12rem;
+
+    #container {
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+
+            .card {
+                border: 1px solid $primary;
+                border-radius: 20px;
+                padding: 4rem 3rem;
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;
+                background: $dark2;
+                transition: all .3s ease-in-out;
+
+                p {
+                    opacity: 0.5;
+                }
+
+                >div {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+
+                    h5 {
+                        background: $primary;
+                        color: $dark;
+                        font-weight: bold;
+                        border-radius: 50%;
+                        height: 4rem;
+                        width: 4rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    p {
+                        opacity: 1;
+                    }
+                }
+
+                &:hover {
+                    border: 1px solid $dark;
+                }
+            }
+        }
+    }
+}
+
+//====================================== Breakpoints
+@media (min-width: 1920px) {
+    .about_experiences {
+        #container {
+            .wrapper {
+                .card {
+                    >div {
+                        gap: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 868px) {
+    .about_experiences {
+        #container {
+            .wrapper {
+                gap: 1.6rem;
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .about_experiences {
+        padding-top: 8rem;
+
+        #container {
+            .wrapper {
+                gap: 1.6rem;
+                grid-template-columns: 1fr;
+
+                .card {
+                    padding: 3rem 2rem;
+
+                    >div {
+                        gap: .6rem;
+                    }
+                }
+            }
+        }
+    }
+}

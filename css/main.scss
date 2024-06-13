@@ -1,0 +1,57 @@
+$dark: #151515;
+$dark2: #1e1e1e;
+$light: #fff;
+$primary: #b9e9b3;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background: $dark;
+    color: $light;
+    font-family: syneR;
+    overscroll-behavior: none;
+    font-variation-settings: normal;
+    font-feature-settings: normal;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::-webkit-scrollbar-track {
+    display: none;
+}
+
+::selection {
+    color: #121315;
+    background: #b9e9b3;
+}
+
+html.has-scroll-smooth {
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+// .c-scrollbar {
+//     z-index: 100;
+// }
+
+.c-scrollbar_thumb {
+    background: $primary;
+    opacity: 1;
+}
+
+@import "utilities/utilities";
+@import "components/components";
+@import "pages/pages";

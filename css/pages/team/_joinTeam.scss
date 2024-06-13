@@ -1,0 +1,113 @@
+.joinTeam {
+    padding-bottom: 12rem;
+
+    #container {
+        h5.mT2 {
+            width: 100%;
+            max-width: 700px;
+        }
+    }
+
+    .wrapper {
+        #container {
+            h5 {
+                width: 100%;
+                max-width: 1000px;
+            }
+
+            .join_card_wrapper {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                gap: 2rem;
+
+                .card {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    text-align: center;
+                    gap: 3rem;
+                    background: $dark2;
+                    border: 1px solid $primary;
+                    padding: 4rem;
+                    border-radius: 25px;
+                    transition: border 0.3s ease-in-out;
+
+                    &:hover {
+                        border: 1px solid $dark;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//====================================== Breakpoints
+@media (max-width: 1440px) {
+    .joinTeam {
+        .wrapper {
+            #container {
+                .join_card_wrapper {
+                    grid-template-columns: 1fr 1fr 1fr;
+                    gap: 1.6rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1150px) {
+    .joinTeam {
+        .wrapper {
+            #container {
+                .join_card_wrapper {
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 868px) {
+    .joinTeam {
+        .wrapper {
+            #container {
+                .join_card_wrapper {
+                    grid-template-columns: 1fr 1fr;
+                    gap: 1rem;
+
+                    .card {
+                        padding: 4rem 2rem;
+
+                        br {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .joinTeam {
+        .wrapper {
+            #container {
+                .join_card_wrapper {
+                    grid-template-columns: 1fr;
+                    gap: 1.6rem;
+
+                    .card {
+                        gap: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .joinTeam {
+        padding-bottom: 8rem;
+    }
+}

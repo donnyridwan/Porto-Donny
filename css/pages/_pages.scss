@@ -1,0 +1,63 @@
+@import "home/home";
+@import "about/about";
+@import "team/team";
+@import "services/services";
+@import "contact/contact";
+
+// For All Pages
+header {
+    padding-bottom: 4rem;
+    width: 100%;
+
+    #container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+
+        h2 {
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        p {
+            max-width: 420px;
+            text-transform: uppercase;
+            margin-top: 1rem;
+        }
+    }
+}
+
+// Full header img
+#full_img {
+    position: relative;
+
+    .parallax_img {
+        height: 110vh;
+        border-radius: 0;
+
+        img {
+            filter: brightness(50%);
+        }
+    }
+
+    h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+
+//====================================== Breakpoints
+@media (max-width: 1040px) {
+    #full_img {
+        .parallax_img {
+            height: 100vh;
+        }
+    }
+}

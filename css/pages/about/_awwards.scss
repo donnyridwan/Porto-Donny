@@ -1,0 +1,55 @@
+.awwards {
+    #container {
+        h5 {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .wrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            .awwards_block {
+                max-width: 900px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 2.2rem 0;
+                border-bottom: 1px solid $light;
+                transition: all 0.3s ease-in-out;
+
+                .awwards_name {
+                    display: flex;
+                    gap: 0.5rem;
+                }
+
+                &:hover {
+                    padding: 2.2rem 2rem;
+                }
+            }
+        }
+    }
+}
+
+//====================================== Breakpoints
+@media (max-width: 620px) {
+    .awwards {
+        #container {
+            .wrapper {
+                .awwards_block {
+                    justify-content: start;
+                    align-items: start;
+                    flex-direction: column;
+                    gap: 1rem;
+
+                    .awwards_name {
+                        gap: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+}

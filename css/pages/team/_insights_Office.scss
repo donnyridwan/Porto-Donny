@@ -1,0 +1,64 @@
+$insight_office: 45vw;
+
+.insights_Office {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    .horizontal_scroll {
+        width: auto;
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+        width: calc($insight_office * 6);
+        height: 60vh;
+
+        img {
+            flex-shrink: 0;
+            width: $insight_office;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 35px;
+        }
+    }
+}
+
+//====================================== Breakpoints
+@media (max-width: 1440px) {
+    .insights_Office {
+        .horizontal_scroll {
+            max-height: 550px;
+            width: calc(55vw * 6);
+            gap: 2rem;
+
+            img {
+                width: 55vw;
+            }
+        }
+    }
+}
+
+@media (max-width: 868px) {
+    .insights_Office {
+        .horizontal_scroll {
+            width: calc(75vw * 6);
+
+            img {
+                width: 75vw;
+            }
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .insights_Office {
+        .horizontal_scroll {
+            width: calc(130vw * 6);
+
+            img {
+                width: 130vw;
+            }
+        }
+    }
+}

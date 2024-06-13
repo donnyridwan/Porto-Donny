@@ -1,0 +1,119 @@
+.contact {
+    padding-bottom: 12rem;
+
+    #container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        .heading_cnt {
+            width: 100%;
+        }
+
+        .wrapper {
+            max-width: 900px;
+            width: 100%;
+
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem;
+
+                input[type="text"],
+                input[type="email"],
+                input[type="tel"],
+                textarea {
+                    width: 100%;
+                    background: none;
+                    outline: none;
+                    border: none;
+                    border-bottom: 1px solid rgb(78, 78, 78);
+                    padding: 2rem 0;
+                    font-size: 1.2rem;
+                    color: $light;
+                    font-family: syneR;
+                    position: relative;
+                    transition: all .3s ease-in-out;
+
+                    &:focus {
+                        border-bottom: 1px solid $primary;
+                    }
+                }
+
+                textarea {
+                    resize: vertical;
+                    height: 200px;
+                }
+
+                .inputSub {
+                    padding: 1.2rem 2rem;
+                    margin-top: 2rem;
+                    width: 180px;
+                    height: 60px;
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    transition: all .2s linear;
+
+                    .inputBlur {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        border: 1px solid $primary;
+                        border-radius: 50px;
+                        transition: all .2s linear;
+                    }
+
+                    input[type="submit"] {
+                        background: none;
+                        outline: none;
+                        color: $primary;
+                        border: none;
+                        font-size: 1rem;
+                        width: 100%;
+                        height: 100%;
+                        mix-blend-mode: difference;
+                        z-index: 2;
+                        cursor: pointer;
+                        transition: all .2s linear;
+                    }
+
+                    &:hover {
+                        .inputBlur {
+                            height: 60px;
+                            width: 60px;
+                            background: $primary;
+                            filter: blur(10px);
+                            scale: 2;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .contact {
+        #container {
+            .wrapper {
+                form {
+                    textarea {
+                        resize: vertical;
+                        height: 300px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .contact {
+        padding-bottom: 8rem;
+    }
+}

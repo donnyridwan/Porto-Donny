@@ -1,0 +1,221 @@
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 1.5rem 0 0 0;
+
+    #container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: dirtyline;
+
+        h2 {
+            font-size: 2rem;
+            font-weight: lighter;
+        }
+
+        .hamburger {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            p {
+                font-size: 1rem;
+            }
+
+            .toggle {
+                width: 50px;
+                height: 50px;
+                cursor: pointer;
+                background-color: rgba(127, 127, 127, 0.3);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                transition: transform 0.3s ease;
+                backdrop-filter: blur(10px);
+
+                span.top,
+                span.bottom {
+                    width: 20px;
+                    height: 2px;
+                    background-color: #fff;
+                }
+
+                span.bottom {
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}
+
+/* Fullscreen Container */
+.menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    background-color: $dark;
+    height: 100vh;
+    width: 100%;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    #container {
+        width: 100%;
+        max-width: 1400px;
+        margin-top: 5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        .left {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            a {
+                font-size: 5.5rem;
+                line-height: 100%;
+                color: #6c6c6c;
+                font-family: dirtyline;
+                position: relative;
+                width: fit-content;
+                transition: margin 0.3s ease-in-out;
+
+                &::before {
+                    position: absolute;
+                    content: attr(data-text);
+                    color: $primary;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    width: 0;
+                    transition: 0.5s all linear;
+                    overflow: hidden;
+                    z-index: 100;
+                }
+
+                &:hover {
+                    margin-left: 3rem;
+
+                    &::before {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 1rem;
+
+            a {
+                font-size: 1.2rem;
+            }
+
+            .social_cnt {
+                padding-top: 1rem;
+
+                img {
+                    width: 42px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.menu_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: rgb(31, 31, 31);
+    opacity: 0;
+    z-index: 5;
+}
+
+//====================================== Breakpoints
+
+@media (max-width: 780px) {
+    .menu {
+        #container {
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 5rem;
+
+            .left {
+                a {
+                    font-size: 4.5rem;
+                }
+            }
+
+            .right {
+                align-items: flex-start;
+
+                a {
+                    font-size: 1.6rem;
+                }
+
+                .social_cnt {
+                    padding-top: 1rem;
+
+                    img {
+                        width: 56px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    nav {
+        padding: 1rem 0 0 0;
+
+        #container {
+            h2 {
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    .menu {
+        #container {
+            gap: 2rem;
+            margin-top: 2rem;
+
+            .left {
+                height: fit-content;
+
+                a {
+                    font-size: 3.5rem;
+                }
+            }
+
+            .right {
+                a {
+                    font-size: 1rem;
+                }
+
+                .social_cnt {
+                    img {
+                        width: 36px;
+                    }
+                }
+            }
+        }
+    }
+}

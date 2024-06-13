@@ -1,0 +1,28 @@
+.intro{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: $dark2;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .intro_wrapper{
+        position: relative;
+        overflow: hidden;
+
+        .inFix{
+            opacity: .2;
+        }
+
+        .inFill{
+            position: absolute;
+            width: 0;
+            color: $primary;
+            top: 0%;
+            left: 0%;
+            overflow: hidden;
+        }
+    }
+}

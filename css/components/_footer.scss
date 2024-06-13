@@ -1,0 +1,102 @@
+footer {
+    padding-top: 12rem;
+
+    #container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        .heading_cnt {
+            width: 100%;
+        }
+
+        .wrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            border-top: 1px solid $light;
+            border-bottom: 1px solid $light;
+
+            .socialLink {
+                position: relative;
+                width: 100%;
+                max-width: 900px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 1px solid $light;
+                padding: 2.2rem 0;
+                overflow: hidden;
+                transition: all .3s ease-in-out;
+
+                img {
+                    width: 48px;
+                }
+
+                &:hover {
+                    padding: 2.2rem 3rem;
+                    border-bottom: 1px solid $primary;
+                }
+
+                &:last-child {
+                    border: none;
+                }
+            }
+        }
+
+        .copyrights {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 4rem;
+        }
+    }
+
+    .full {
+        height: 16vw;
+        overflow: hidden;
+        opacity: .1;
+
+        h1 {
+            font-size: 24.1vw;
+        }
+    }
+}
+
+.footerPTnone {
+    padding-top: 0;
+}
+
+//====================================== Breakpoint
+@media (max-width: 780px) {
+    footer {
+        #container {
+            .wrapper {
+                .socialLink {
+                    padding: 1.4rem 0;
+
+                    img {
+                        width: 36px;
+                    }
+
+                    &:hover {
+                        padding: 1.4rem 2rem;
+                    }
+                }
+            }
+
+            .copyrights {
+                gap: 1rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    footer {
+        padding-top: 8rem;
+    }
+}

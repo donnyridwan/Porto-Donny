@@ -1,0 +1,34 @@
+@import "intro";
+@import "canvasCursor";
+@import "customCursor";
+@import "nav";
+@import "btn";
+@import "footer";
+
+.parallax_img {
+    overflow: hidden;
+    width: 100%;
+    border-radius: 50px;
+
+    video,
+    img {
+        object-fit: cover;
+        background-position: center;
+    }
+
+    img {
+        width: 110%;
+        height: 110%;
+    }
+
+    video {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 520px) {
+    .parallax_img {
+        border-radius: 30px;
+    }
+}

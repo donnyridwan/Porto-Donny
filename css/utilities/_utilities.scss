@@ -1,0 +1,37 @@
+@import "fonts";
+@import "spacing";
+
+#container {
+    width: 100%;
+    padding: 0 5.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: $light;
+}
+
+section {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+//====================================== Breakpoints
+
+@media (min-width: 1920px) {
+    #container {
+        padding: 0 8.5rem;
+    }
+}
+
+@media (max-width: 1040px) {
+    #container {
+        padding: 0 3rem;
+    }
+}
+
+@media (max-width: 520px) {
+    #container {
+        padding: 0 1rem;
+    }
+}

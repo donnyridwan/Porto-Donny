@@ -1,0 +1,18 @@
+.cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: $primary;
+    width: 20px;
+    height: 20px;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    z-index: 999999;
+    pointer-events: none;
+}
+
+@media (max-width: 520px) {
+    .cursor {
+        opacity: 0;
+    }
+}

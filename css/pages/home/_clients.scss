@@ -1,0 +1,68 @@
+// For Home and about page too
+.clients {
+    #container {
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            h3 {
+                width: 100%;
+                max-width: 900px;
+            }
+
+        }
+    }
+
+    // Swiper
+    .swiper {
+        width: 100%;
+        height: 80vh;
+        max-height: 700px;
+        padding: 0 30px;
+
+        .swiper-slide {
+            background: $dark2;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            border: 1px solid $primary;
+            border-radius: 20px;
+            padding: 4rem 2rem;
+            transition: all .3s ease-in-out;
+
+            .top {
+                p {
+                    font-size: 1.3rem;
+                }
+            }
+
+            &:hover {
+                border: 1px solid $dark2;
+            }
+        }
+    }
+}
+
+//====================================== Breakpoint
+@media (max-width: 520px) {
+    .clients {
+        .swiper {
+            .swiper-slide {
+                padding: 3rem 2rem;
+
+                .top {
+                    p {
+                        font-size: 4.2vw;
+                    }
+                }
+
+                &:hover {
+                    border: 1px solid $dark2;
+                }
+            }
+        }
+    }
+}

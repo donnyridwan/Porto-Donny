@@ -1,0 +1,84 @@
+@import "joinTeam";
+@import "insights_Office";
+
+.team {
+    padding: 12rem 0;
+
+    #container {
+        h5.mT2 {
+            width: 100%;
+            max-width: 700px;
+        }
+
+        .team_wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 2rem;
+            row-gap: 4rem;
+
+            .team_card {
+                .parallax_img {
+                    height: 70vh;
+                    // max-height: 520px;
+                    border-radius: 20px;
+                }
+
+                h5 {
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+}
+
+//====================================== Breakpoints
+@media (max-width: 1440px) {
+    .team {
+        #container {
+            .team_wrapper {
+                .team_card {
+                    .parallax_img {
+                        max-height: 520px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .team {
+        #container {
+            .team_wrapper {
+                grid-template-columns: 1fr 1fr;
+                column-gap: 2rem;
+                row-gap: 4rem;
+
+                .team_card {
+                    .parallax_img {
+                        max-height: 450px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .team {
+        padding: 8rem 0;
+
+        #container {
+            .team_wrapper {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+
+                .team_card {
+                    .parallax_img {
+                        max-height: 450px;
+                    }
+                }
+            }
+        }
+    }
+}

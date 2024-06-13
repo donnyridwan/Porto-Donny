@@ -1,0 +1,107 @@
+.about {
+    padding: 12rem 0;
+
+    #container {
+        height: 100%;
+
+        .txt {
+            width: 100%;
+            max-width: 620px;
+        }
+    }
+}
+
+// For both home and about page
+
+.about_card {
+    display: flex;
+    gap: 1.2rem;
+
+    .card {
+        width: 100%;
+        background: $dark2;
+        border-radius: 30px;
+        padding: 3rem;
+        display: flex;
+        text-transform: uppercase;
+        flex-direction: column;
+        gap: 5rem;
+        transition: background .3s ease-in-out;
+
+        h1 {
+            font-size: 6rem;
+            font-family: sans-serif;
+            font-weight: lighter;
+            text-align: right;
+            letter-spacing: -.05em;
+        }
+
+        h4 {
+            max-width: 150px;
+        }
+
+        &:nth-child(1) {
+            &:hover {
+                background: rgb(202, 86, 9);
+            }
+        }
+
+        &:nth-child(2) {
+            &:hover {
+                background: rgb(46, 176, 6);
+            }
+        }
+
+        &:nth-child(3) {
+            &:hover {
+                background: rgb(16, 129, 181);
+            }
+        }
+    }
+}
+
+//====================================== Breakpoints
+
+@media (max-width: 1440px) {
+
+    .about_card {
+        .card {
+            padding: 2.2rem;
+
+            h1 {
+                font-size: 4.5rem;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1040px) {
+
+    .about_card {
+        flex-direction: column;
+
+        .card {
+            gap: 7rem;
+            padding: 3rem;
+        }
+    }
+
+}
+
+@media (max-width: 520px) {
+    .about {
+        padding: 8rem 0;
+
+        .about_card {
+            .card {
+                gap: 5rem;
+                padding: 3rem 2rem;
+
+                h1 {
+                    font-size: 17vw;
+                }
+            }
+        }
+    }
+}

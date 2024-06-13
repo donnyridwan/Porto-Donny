@@ -1,0 +1,19 @@
+.Reels {
+    height: 100vh;
+}
+
+//====================================== Breakpoints
+
+@media (max-width: 1040px) {
+    .Reels {
+        height: 100vh;
+        max-height: 768px;
+    }
+}
+
+@media (max-width: 520px) {
+    .Reels {
+        height: 100vh;
+        max-height: 510px;
+    }
+}

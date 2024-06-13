@@ -1,0 +1,142 @@
+.dribbble {
+    // Marquee
+    overflow: visible;
+
+    .marquee {
+        padding: 12rem 0;
+
+        .marquee-container {
+            white-space: nowrap;
+            overflow: hidden;
+            display: flex;
+        }
+
+        .marquee-text,
+        .marquee-text-reverse {
+            flex-shrink: 0;
+        }
+    }
+
+    // Wrapper
+    .wrapper {
+        height: 100vh;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: visible;
+
+        .content {
+            max-width: 650px;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+
+            img {
+                width: 200px;
+            }
+        }
+
+        .dribImg {
+            position: absolute;
+            object-fit: cover;
+            width: 22vw;
+            border-radius: 20px;
+        }
+
+        .img1 {
+            top: 1%;
+            left: 8%;
+        }
+
+        .img2 {
+            top: 30%;
+            left: 1%;
+        }
+
+        .img3 {
+            bottom: 1%;
+            left: 15%;
+        }
+
+        .img4 {
+            right: 10%;
+            top: 8%;
+        }
+
+        .img5 {
+            right: 1%;
+            top: 35%;
+        }
+
+        .img6 {
+            bottom: 0%;
+            right: 20%;
+        }
+    }
+}
+
+//====================================== Breakpoint
+@media (max-width: 1040px) {
+    .dribbble {
+        .wrapper {
+            height: 100vh;
+            max-height: 900px;
+
+            .dribImg {
+                width: 30vw;
+            }
+
+            .img1 {
+                left: 4%;
+            }
+
+            .img2 {
+                top: 40%;
+            }
+
+            .img3 {
+                left: 10%;
+            }
+
+            .img4 {
+                right: 5%;
+            }
+
+            .img5 {
+                right: 1%;
+                top: 45%;
+            }
+
+            .img6 {
+                right: 15%;
+            }
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .dribbble {
+        .marquee {
+            padding: 8rem 0;
+        }
+
+        .wrapper {
+            height: fit-content;
+
+            .content {
+                img {
+                    width: 150px;
+                }
+            }
+
+            .dribImg {
+                display: none;
+            }
+        }
+    }
+}
